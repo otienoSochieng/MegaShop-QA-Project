@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "MegaShop API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"test@example.com\",\"password\":\"Password123\"}"
+        },
+        "url": {
+          "raw": "https://staging.megashop.example/api/auth/login"
+        }
+      }
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://staging.megashop.example/api/products"
+        }
+      }
+    },
+    {
+      "name": "Add to Cart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"product_id\":1,\"qty\":1}"
+        },
+        "url": {
+          "raw": "https://staging.megashop.example/api/cart"
+        }
+      }
+    }
+  ]
+}
